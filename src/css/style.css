@@ -1,4 +1,42 @@
-body {
-  margin: 0;
-  padding: 0;
+@import '../icons/css/all.css';
+
+h1 {
+  font-style: normal;
+  font-size: 35px;
+  color: rgba(166, 82, 192, 100%);
+  font-family: sans-serif, Arial, Helvetica;
+  text-align: center;
+}
+
+
+.begin__paragraph {
+  color: hsl(26, 75%, 40%);
+  font-size: 32px;
+}
+
+p1 {
+  color: hsl(26, 75%, 40%);
+
+}
+
+#em {
+  font-weight: 350;
+  font-style: italic;
+  color: rgba(145, 192, 58, 100%);
+}
+
+#emu {
+  font-weight: 200;
+  font-style: italic;
+  color: rgba(191, 150, 110, 100%);
+  text-decoration: underline;
+}
+
+#mark_s {
+  background-color: rgb(210, 206, 50);
+  text-decoration: line-through;
+}
+
+.strong {
+  font-weight: 900;
 }
