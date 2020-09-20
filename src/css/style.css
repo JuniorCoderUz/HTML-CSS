@@ -11,7 +11,8 @@ body {
 }
 
 h1,
-h2 {
+h2,
+h6 {
 	color: red;
 	text-align: center;
 	font-size: 16px;
@@ -28,36 +29,17 @@ p {
 	text-align: left;
 }
 
-/* .box__start {
-	display: inline-block;
-	height: 400px;
-	width: 430px;
-	background-color: rgba(128, 28, 176, 70%);
-	margin: 0 0 0 2px;
-	border: 3px solid black;
-	padding: 5px;
-}
-*/
 .box {
+	position: absolute;
 	display: inline-block;
-	height: 400px;
-	width: 430px;
-	background-color: rgba(128, 28, 176, 70%);
-	margin: 0 0.6%;
-	padding: 5px;
+	height: 200px;
+	width: 230px;
+	background-color: rgba(128, 28, 176, 100%);
+	/* margin: auto; */
+	/* padding: auto; */
 	border: 3px solid black;
+	z-index: 1;
 }
-
-/*
-.box__end {
-	display: inline-block;
-	height: 400px;
-	width: 430px;
-	background-color: rgba(128, 28, 176, 70%);
-	margin: 0;
-	padding: 5px;
-	border: 3px solid black;
-} */
 
 .all__contents {
 	margin: 0 20px;
@@ -76,4 +58,29 @@ img.photos {
 	margin: 0 auto;
 	width: 65vh;
 	border: 1px dashed black;
+}
+div.boxs {
+	position: relative;
+	height: 80vh;
+}
+
+div.group__div {
+	position: absolute;
+}
+
+div.start {
+	left: 10pt;
+	z-index: 3;
+}
+
+div.green {
+	left: 100pt;
+	background-color: green;
+	z-index: 2;
+}
+
+div.red {
+	left: 150pt;
+	background-color: red;
+	z-index: 1;
 }
