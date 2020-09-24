@@ -29,6 +29,7 @@ p {
 	font-weight: 500;
 	text-align: left;
 }
+
 .boxes {
 	position: relative;
 	background-color: red;
@@ -49,6 +50,7 @@ p {
 .red {
 	height: auto;
 }
+
 .all__contents {
 	margin: 0 20px;
 }
@@ -57,11 +59,29 @@ p {
 img.photos {
 	display: block;
 	margin: 0 auto;
-	width: 65vh;
+	width: 25vw;
 	border: 1px dashed black;
 }
 
 .test__photo {
 	float: right;
 	z-index: 2;
+}
+
+
+/*code of footer*/
+.footer__content {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.copy {
+	font-size: 4wh;
+	display: inline-block;
+}
+
+.joke {
+	color: rgba(0, 0, 0, 68%);
+	font-size: 3vw;
+	text-decoration: none;
 }
