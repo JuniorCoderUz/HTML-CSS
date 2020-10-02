@@ -1,87 +1,440 @@
-@import "../icons/css/all.css";
+/* ////////////////////////////////////// */
 
 * {
 	box-sizing: border-box;
-}
-
-body {
-	margin: 0 0.1px;
+	margin: 0;
 	padding: 0;
-	background-color: rgba(255, 255, 224, 100%);
 }
 
-h1,
-h2,
-h6 {
+.promo {
+	background: url(../img/bg/main_bg.jpg) center center/cover no-repeat;
+	height: 625px;
+	padding: 19px 0 42px 0;
+}
+
+div.container {
+	width: 1140px;
+	margin: 0 auto;
+}
+
+div.logo img.logo_img {
 	display: block;
-	color: red;
+	width: 53px;
+	height: 41px;
+	margin: 0 auto;
+}
+
+div.logo p.logo_text {
+	font-family: Roboto-Regular;
+	text-transform: uppercase;
+	color: white;
+	font-size: 13px;
+	font-weight: 500;
+	line-height: 24px;
 	text-align: center;
-	font-size: 16px;
+	margin-top: 14px;
+	margin-bottom: 30px;
+}
+
+h1.title,
+h2.title {
+	text-align: center;
+	font-family: Roboto-Black;
+	color: #f9bf3b;
+	font-size: 31px;
+	font-weight: 400;
+	line-height: 24px;
+	text-transform: uppercase;
+}
+
+div.line {
+	text-decoration: line-through;
+	width: 100px;
+}
+
+h2.title_big {
+	color: #ffffff;
+	font-family: Roboto-Black;
+	font-size: 50px;
+	font-weight: 400;
+	line-height: 24px;
+	text-align: center;
+	text-transform: uppercase;
+	margin: 25px 0 25px 0;
+}
+
+p.description {
+	color: #ffffff;
+	text-align: center;
+	font-family: Roboto;
+	font-size: 21px;
+	font-weight: 300;
+	line-height: 28px;
+	/* Text style for "Ежедневно" */
+	font-family: Roboto-Light;
+	font-weight: 300;
+	margin-top: 23px;
+	text-transform: uppercase;
+}
+
+span.span-bold-yellow {
+	/* Text style for "БЕСПЛАТНОМ" */
+	font-family: Roboto-Bold;
+	font-weight: 700;
+	color: #f9bf3b;
+}
+
+button.promo_btn {
+	width: 15vw;
+	height: 50px;
+	font-size: 12px;
+	font-weight: 400;
+	font-family: Roboto-Thin;
+	color: #ffffff;
+	text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.22);
+	box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.18);
+	text-transform: uppercase;
+	border: 2px solid rgba(0, 0, 0, 0.23);
+	border-radius: 3px;
+	background-image: linear-gradient(to top, #2798b9 0%, #3ab6da 100%);
+	margin: 8vh auto auto auto;
+	cursor: pointer;
+	display: block;
+	outline: none;
+}
+
+div.promo_more>p {
+	color: #ffffff;
+	text-align: center;
+	margin: 8vh 0 0 0;
+	font-family: Roboto-Thin;
+	font-size: 12px;
+	font-weight: 200;
+	line-height: 24px;
+	text-transform: uppercase;
+}
+
+div.promo_more>img.promo_down {
+	display: block;
+	margin: 0 auto;
+	margin-top: 13px;
+	width: 20px;
+	height: 15px;
+}
+
+/* Intensive Information Start */
+section.promo_intensive_section {
+	background-color: #efefef;
+	padding: 12vh 0;
+}
+
+div.promo_intensive_start {
+	display: block;
+	margin: 0 auto;
+}
+
+div.waiting_wrapper {
+	margin-top: 25px;
+	display: flex;
+	justify-content: space-between;
+}
+
+
+div.promo_intensive_start>h3.promo_intensive_title {
+	color: #252525;
+	text-align: center;
+	font-family: Roboto-Regular;
+	font-weight: 400;
+	text-transform: uppercase;
+	font-size: 2vw;
+}
+
+div.promo_intensive_start>h3.promo_intensive_title::after {
+	content: "";
+	display: block;
+	width: 217px;
+	height: 4px;
+	margin: 2.5vh auto;
+	background-color: #f9bf3b;
+	border-radius: 25px;
+}
+
+div.promo_intensive_start>h4.promo_intensive_argument {
+	font-family: Roboto-Regular;
+	color: #000000;
+	font-size: 1.4vw;
+	font-weight: 400;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+div.images_paragraphs {
+	display: inline-block;
+	margin: 0 3.8vw;
+	vertical-align: top;
+	width: 20vw;
+}
+
+img.intensive_waiting_images {
+	max-width: 20vw;
+	margin: 0;
+	display: inline-block;
+	text-align: center;
+}
+
+div.images_paragraphs>p {
+	text-align: center;
+	display: inline-block;
+	font-family: Roboto-Regular;
+	margin: 0 auto;
+	color: #4a4a4a;
+	font-size: 1vw;
+	font-weight: 600;
+	line-height: 21px;
+}
+
+.no-margin {
+	margin: 0;
+}
+
+/* Optimization section starting */
+
+div.optimization_information {
+	position: relative;
+	display: flex;
+	justify-content: flex-end;
+}
+
+img.woman_teacher {
+	position: absolute;
+	z-index: -1;
+	width: 868px;
+	height: 502px;
+	left: -50px;
+	margin-top: 48px;
+}
+
+div.mini-container {
+	width: 524px;
+	position: relative;
+	text-align: left;
+	padding-top: 90px;
+}
+
+h4.optimization-title {
+	display: block;
+	width: 600px;
+	text-align: left;
+	font-size: 2vw;
+	font-family: Roboto-Regular;
+	font-weight: bolder;
+	inline-size: max-content;
+	margin-bottom: 24px;
+}
+
+p.optimization-paragraph {
+	text-align: left;
+	font-size: 17px;
+	font-family: Roboto-Regular;
+	display: block;
+	margin-top: 18px;
+}
+
+span.span-bold-black {
+	font-family: Roboto-Bold;
+	font-weight: bolder;
+	color: #000000;
+	display: block;
+}
+
+span.span-margin-15 {
+	margin: -6px 0px 0px 0px;
+	display: block;
+}
+
+
+
+/* Intensive finished section start*/
+
+
+section.intensive_finished_section {
+	background: url("../img/bg/second_bg.jpg") center center/contain no-repeat;
+	height: 314px;
+	margin-top: 73px;
+	padding-top: 36px;
+}
+
+h4.finished_title {
+	font-size: 24px;
+	font-family: Roboto-Regular;
+	color: #ffffff;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+h4.finished_title::after {
+	content: "";
+	background-color: #f9bf3b;
+	border-radius: 25px;
+	display: block;
+	margin: 15px auto;
+	width: 217px;
+	height: 4px;
+}
+
+div.finished_icons_container {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 	margin-top: 30px;
 }
 
-h2.little__text {
-	margin-top: 5vh;
+div.finished_icons {
+	display: flex;
+	background-color: #b4e2ff;
+	width: 90px;
+	height: 90px;
+	border-radius: 70px;
+	justify-content: space-around;
+	align-items: center;
 }
 
-p {
-	font-size: 10pt;
-	font-weight: 500;
-	text-align: left;
+div.finished_paragraphs_container {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 }
 
-.boxes {
-	position: relative;
-	background-color: red;
-	height: 300px;
-	z-index: -1;
+.finished_paragraphs {
+	display: flex;
+	justify-content: space-around;
+	width: 137px;
 }
 
-.box {
-	display: inline-block;
-	height: 200px;
-	width: 230px;
-	background-color: rgba(128, 28, 176, 100%);
-	border: 3px solid black;
-	vertical-align: middle;
-	margin: 2vh;
-}
-
-.red {
-	height: auto;
-}
-
-.all__contents {
-	margin: 0 20px;
-}
-
-
-img.photos {
-	display: block;
-	margin: 0 auto;
-	width: 25vw;
-	border: 1px dashed black;
-}
-
-.test__photo {
-	float: right;
-	z-index: 2;
-}
-
-
-/*code of footer*/
-.footer__content {
-	margin: 0 auto;
+p.finished_text_paragaraphs {
+	color: #ffffff;
+	font-size: 15px;
+	font-family: Roboto-Regular;
 	text-align: center;
 }
 
-.copy {
-	font-size: 4wh;
-	display: inline-block;
+/* Surprise section started */
+
+section.get_surprise_section {
+	background-color: #efefef;
+	padding: 87px 0;
 }
 
-.joke {
-	color: rgba(0, 0, 0, 68%);
-	font-size: 3vw;
-	text-decoration: none;
+
+
+img.surprise_box {
+	width: 114px;
+	height: 123px;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 55px;
+}
+
+p.surprise_paragraph {
+	color: #252525;
+	font-family: Roboto-Regular;
+	text-align: center;
+	font-size: 26px;
+	font-weight: 400;
+	line-height: 43px;
+}
+
+/* First webinar section start */
+img.webinar_img {
+	display: block;
+	margin: 72px auto 37px auto;
+	width: 322px;
+	height: 181px;
+}
+
+p.webinar_paragraph {
+	font-family: Roboto-Regular;
+	text-align: center;
+	color: #252525;
+	font-size: 25px;
+	font-weight: 400;
+	line-height: 12px;
+	text-transform: uppercase;
+	margin-bottom: 28px;
+}
+
+p.webinar_time {
+	color: #299cbd;
+	font-family: Roboto-Black;
+	font-size: 31px;
+	font-weight: 400;
+	line-height: 12px;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 28px;
+}
+
+p.webinar_place {
+	color: #4a4a4a;
+	font-family: Roboto-Regular;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 20px;
+	text-align: center;
+	margin-bottom: 60px;
+}
+
+/* Footer start*/
+
+
+
+
+
+footer {
+	height: 126px;
+	background-color: #1a1a1a;
+}
+
+/* div.network {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+} */
+
+
+/* img.icons {
+	width: 30px;
+	height: 30px;
+} */
+
+div.copy_right {
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	height: 50%;
+}
+
+a.services {
+	color: #888888;
+	font-family: Roboto-Regular;
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 21px;
+	text-decoration: underline;
+}
+
+a.hr::after {
+	content: " |";
+	color: #888888;
+
+}
+
+p.call_center {
+	text-align: center;
+	color: #888888;
+	font-family: Roboto-Regular;
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 21px;
 }
